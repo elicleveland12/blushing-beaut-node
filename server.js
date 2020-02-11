@@ -58,4 +58,4 @@ app.post("/checkout", async (req, res) => {
   res.json({ error, status });
 });
 
-app.listen(process.env.PORT);
+app.listen(process.env.PORT || 8000);
