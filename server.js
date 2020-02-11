@@ -32,7 +32,7 @@ app.post("/checkout", async (req, res) => {
         currency: "usd",
         customer: customer.id,
         receipt_email: customer.email,
-        description: `${product.phoneNum} - ${product.cupType} - ${product.size} - ${product.quantity} - ${product.paintType} - swirl? ( ${product.swirlColorOne} ${product.swirlColorTwo} ${product.swirlColorThree} ) - paint or glitter ? ( ${product.topColor} ${product.bottomColor} ) - decal: ${product.decal} - ${product.fontStyle} - ${product.textColor} - ${product.textLine1}-${product.textLine2}-${product.textLine3}-${product.textLine4} - ${product.additionalInfo}`,
+        description: `${product.phoneNum} - ${product.cupType} - ${product.size} - ${product.quantity} - ${product.paintType} - swirl? ( ${product.swirlColors} ) - paint or glitter ? ( ${product.topColor} ${product.bottomColor} ) - decal: ${product.decal} - ${product.fontStyle} - ${product.textColor} - ${product.textLine1}-${product.textLine2}-${product.textLine3}-${product.textLine4} - ${product.additionalInfo}`,
         shipping: {
           name: token.card.name,
           address: {
